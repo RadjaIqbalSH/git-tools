@@ -89,7 +89,7 @@ CreateHotBranch () {
   done
   uppercase_ticket_code=$(UppercaseString "$ticket_code")
   lower_case_bug_name=$(LowercaseString "$bug_name")
-  branch_name="hotfix/${uppercase_ticket_code:-FREE}-$lower_case_bug_name"
+  branch_name="hotfix/${uppercase_ticket_code:-NO-TICKET}-$lower_case_bug_name"
   clean_branch_name=$(TrimString "$branch_name")
   git checkout -b "$clean_branch_name" origin/master
   exit 1
