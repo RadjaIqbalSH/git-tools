@@ -34,7 +34,7 @@ SelectBranch () {
     echo "Select an option (use the up/down arrow keys, press Enter to confirm):"
     for i in "${!options[@]}"; do
       if [ $i -eq $selected ]; then
-        echo -e "\e[1;36m➤ ${options[$i]}\e[0m"
+        echo -e "➤ ${options[$i]}\e[0m"
       else
         echo "  ${options[$i]}"
       fi
