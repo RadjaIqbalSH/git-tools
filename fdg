@@ -34,7 +34,7 @@ SelectBranch () {
     echo "Select an option (use the up/down arrow keys, press Enter to confirm):"
     for i in "${!options[@]}"; do
       if [ $i -eq $selected ]; then
-        echo -e "➤ ${options[$i]}\e[0m"
+        echo -e "➤ ${options[$i]}"
       else
         echo "  ${options[$i]}"
       fi
@@ -186,7 +186,7 @@ Commit () {
     echo "Select an option (use the up/down arrow keys, press Enter to confirm):"
     for i in "${!type_options[@]}"; do
       if [ $i -eq $type_select ]; then
-        echo -e "\e[1;36m➤ ${type_options[$i]}\e[0m"
+        echo -e "➤ ${type_options[$i]}"
       else
         echo "  ${type_options[$i]}"
       fi
