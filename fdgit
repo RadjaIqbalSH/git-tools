@@ -81,8 +81,8 @@ CreateHotBranch () {
   done
   while true; do
     read -p "Bug name : " -r bug_name
-    if [ ${#bug_name} -gt 20 ]; then
-      echo "Nama bug melebihi 20 karakter, silakan coba lagi."
+    if [ ${#bug_name} -gt 60 ]; then
+      echo "Nama bug melebihi 60 karakter, silakan coba lagi."
     else
       break
     fi
@@ -119,8 +119,8 @@ createFeatureBranch () {
 
   while true; do
     read -p "Feature name : " -r feature_name
-    if [ ${#feature_name} -gt 20 ]; then
-      echo "Nama bug melebihi 20 karakter, silakan coba lagi."
+    if [ ${#feature_name} -gt 60 ]; then
+      echo "Nama bug melebihi 60 karakter, silakan coba lagi."
     else
       break
     fi
@@ -160,8 +160,8 @@ createFixBranch () {
 
   while true; do
     read -p "Bug name : " -r bug_name
-    if [ ${#bug_name} -gt 20 ]; then
-      echo "Nama bug melebihi 20 karakter, silakan coba lagi."
+    if [ ${#bug_name} -gt 60 ]; then
+      echo "Nama bug melebihi 60 karakter, silakan coba lagi."
     else
       break
     fi
@@ -209,8 +209,8 @@ Commit () {
   done
   while true; do
     read -p "Description : " -r description
-    if [ ${#description} -gt 50 ]; then
-      echo "Nama bug melebihi 50 karakter, silakan coba lagi."
+    if [ ${#description} -gt 200 ]; then
+      echo "Nama bug melebihi 200 karakter, silakan coba lagi."
     else
       break
     fi
@@ -266,7 +266,7 @@ while true; do
       exit 1
     ;;
     *)
-      echo "Welcome to Femaledaily Git Tools v1.0.1"
+      echo "Welcome to Femaledaily Git Tools v1.0.2"
       exit 1
       ;;
   esac
